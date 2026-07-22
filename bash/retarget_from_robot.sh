@@ -10,9 +10,9 @@ set -euo pipefail
 # step 3 visualizes them all together.
 #   e.g. VIS_ROBOTS="g1 h2 t800 hightorque_hi" ./scripts/retarget_from_robot.sh
 
-ROBOT_MOTION_FILE="${ROBOT_MOTION_FILE:-dataset/lafan1_g1/dance1_subject2.csv}"
+ROBOT_MOTION_FILE="${ROBOT_MOTION_FILE:-dataset/lafan1_g1/dance1_subject1.csv}"
 ORIGIN_ROBOT="${ORIGIN_ROBOT:-g1}"
-VIS_ROBOTS="${VIS_ROBOTS:-g1 h2 t800 hightorque_hi jaka_pi agibot_x2}"
+VIS_ROBOTS="${VIS_ROBOTS:-g1 grogu}"
 SOURCE_FPS="${SOURCE_FPS:-30}"
 RENDER_FPS="${RENDER_FPS:-30}"
 
