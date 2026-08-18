@@ -88,6 +88,7 @@ SMPL-X 模型文件**不包含**在本仓库中（受其自身许可协议约束
 | `KEYPOINTS_NAME` | 由动作文件名自动推导 | 关键点 / 输出动作名称 |
 | `SOURCE_FPS` | `120` | 源动作帧率 |
 | `RENDER_FPS` | `30` | 可视化渲染帧率 |
+| `LOOP` | `true` | 可视化结果循环播放 |
 | `PYTHON_BIN` | 自动检测 | 指定 Python 解释器 |
 
 示例（自定义机器人与动作文件）：
@@ -113,6 +114,7 @@ SMPL_MOTION_FILE="dataset/ACCAD/Form_1_stageii.npz" \
 | `VIS_ROBOTS` | `h2 r1` | 目标机器人列表（空格分隔，支持多个） |
 | `SOURCE_FPS` | `30` | 源动作帧率 |
 | `RENDER_FPS` | `30` | 可视化渲染帧率 |
+| `LOOP` | `true` | 可视化结果循环播放 |
 | `PYTHON_BIN` | 自动检测 | 指定 Python 解释器 |
 
 示例：

@@ -14,6 +14,7 @@ SMPL_MOTION_FILE="${SMPL_MOTION_FILE:-dataset/ACCAD/Form_1_stageii.npz}"
 VIS_ROBOTS="${VIS_ROBOTS:-g1 grogu}"
 SOURCE_FPS="${SOURCE_FPS:-120}"
 RENDER_FPS="${RENDER_FPS:-30}"
+LOOP="${LOOP:-true}"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
@@ -106,10 +107,10 @@ else
 fi
 
 echo "[3/3] multi_robot_visualize"
-"${PYTHON_BIN}" scripts/multi_robot_visualize.py \
-  --motion "${MOTION_NAME}" \
-  --robots "${VIS_ROBOT_ARR[@]}" \
-  --source_fps "${SOURCE_FPS}" \
-  --render_fps "${RENDER_FPS}"
+VIZ_ARGS=(--motion "${MOTION_NAME}" --robots "${VIS_ROBOT_ARR[@]}" --source_fps "${SOURCE_FPS}" --render_fps "${RENDER_FPS}")
+if [[ "${LOOP}" == "true" ]]; then
+  VIZ_ARGS+=(--loop)
+fi
+"${PYTHON_BIN}" scripts/multi_robot_visualize.py "${VIZ_ARGS[@]}"
 
 echo "[done] pipeline finished: motion=${MOTION_NAME}, robots=${VIS_ROBOTS}"

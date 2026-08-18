@@ -90,6 +90,7 @@ You can customize parameters through environment variables:
 | `KEYPOINTS_NAME` | Derived from motion file name | Keypoints / output motion name |
 | `SOURCE_FPS` | `120` | Source motion frame rate |
 | `RENDER_FPS` | `30` | Visualization render frame rate |
+| `LOOP` | `true` | Loop playback of the visualization |
 | `PYTHON_BIN` | Auto-detected | Python interpreter to use |
 
 Example (custom robots and motion file):
@@ -115,6 +116,7 @@ SMPL_MOTION_FILE="dataset/ACCAD/Form_1_stageii.npz" \
 | `VIS_ROBOTS` | `h2 r1` | Target robot list (space-separated, multiple allowed) |
 | `SOURCE_FPS` | `30` | Source motion frame rate |
 | `RENDER_FPS` | `30` | Visualization render frame rate |
+| `LOOP` | `true` | Loop playback of the visualization |
 | `PYTHON_BIN` | Auto-detected | Python interpreter to use |
 
 Example:
