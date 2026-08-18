@@ -29,7 +29,7 @@ Directory layout:
 
 ```bash
 # Clone with regular Git
-git clone https://github.com/ccrpRepo/robot_retargeter.git
+git clone https://github.com/tonlyai/robot_retargeter.git
 cd robot_retargeter
 ```
 
@@ -52,8 +52,9 @@ pip install -r requirements.txt
 
 SMPL-X model files are **not** included in this repository (subject to their own license terms). To use the SMPL-X pipeline (`retarget_from_smplx.sh`), download them manually:
 
-1. Register and download from the official site: [smplx model download](https://download.is.tue.mpg.de/download.php?domain=smplx&sfile=smplx_lockedhead_20230207.zip) (download "SMPL-X" models in `.npz` format).
-2. Place files under `asset/smplx/` as follows:
+1. Option 1: Register and download from the official site: [smplx model download](https://download.is.tue.mpg.de/download.php?domain=smplx&sfile=smplx_lockedhead_20230207.zip) (download "SMPL-X" models in `.npz` format).
+2. Option 2: Download from T Drive: [SMPLX_.zip](https://pan.tcl.com/s/ncEu9yPASUE) (password: `v3xs`).
+3. Place files under `asset/smplx/` as follows:
 
    ```
    asset/smplx/

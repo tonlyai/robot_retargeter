@@ -28,7 +28,7 @@
 
 ```bash
 # 使用普通 Git 克隆
-git clone https://github.com/ccrpRepo/robot_retargeter.git
+git clone https://github.com/tonlyai/robot_retargeter.git
 cd robot_retargeter
 ```
 
@@ -50,8 +50,9 @@ pip install -r requirements.txt
 
 SMPL-X 模型文件**不包含**在本仓库中（受其自身许可协议约束）。若要使用 SMPL-X 流水线（`retarget_from_smplx.sh`），请自行下载：
 
-1. 在官网注册并下载：[smplx model download](https://download.is.tue.mpg.de/download.php?domain=smplx&sfile=smplx_lockedhead_20230207.zip) （下载 "SMPL-X" 模型，`.npz` 格式）。
-2. 将文件放到 `asset/smplx/` 目录下，结构如下：
+1. 方式一：在官网注册并下载：[smplx model download](https://download.is.tue.mpg.de/download.php?domain=smplx&sfile=smplx_lockedhead_20230207.zip) （下载 "SMPL-X" 模型，`.npz` 格式）。
+2. 方式二：通过 T盘 下载：[SMPLX_.zip](https://pan.tcl.com/s/ncEu9yPASUE)（提取码：`v3xs`）。
+3. 将文件放到 `asset/smplx/` 目录下，结构如下：
 
    ```
    asset/smplx/
